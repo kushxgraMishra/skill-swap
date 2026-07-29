@@ -1,0 +1,276 @@
+Software Requirements Specification (SRS)
+Skill Swap – A Peer-to-Peer Skill Exchange Platform
+
+Version 1.0
+
+1. Introduction
+
+Purpose
+
+The purpose of the Skill Swap application is to provide a platform where users can exchange skills and knowledge without monetary transactions. 
+The system enables users to showcase the skills they can teach and discover others from whom they can learn. 
+This project focuses on frontend development and demonstrates a modern, responsive user interface.
+
+Scope
+
+Skill Swap is a frontend web application designed to:
+* Allow users to create and manage profiles.
+* Display skills users can offer and skills they want to learn.
+* Search and filter available skills.
+* Simulate sending and receiving skill swap requests.
+* Store data using Local Storage or mock JSON data.
+
+Objectives
+
+* Promote peer-to-peer learning.
+* Provide a user-friendly interface.
+* Demonstrate frontend development concepts.
+* Build a responsive web application.
+
+
+2. Overall Description
+
+Product Perspective
+
+Skill Swap is a standalone frontend application.
+It does not require a backend server or database. 
+User data is stored locally within the browser.
+
+Product Functions
+
+The application allows users to:
+
+* Register (UI only)
+* Log in (UI only)
+* Create a profile
+* Add offered skills
+* Add desired skills
+* Browse available users
+* Search skills
+* Filter skills by category
+* Send swap requests
+* Accept or reject requests (simulated)
+* View current swaps
+* Edit profile information
+
+User Classes
+
+User
+
+* Register account (UI)
+* Update profile
+* Browse skills
+* Search users
+* Request skill exchange
+* Manage requests
+
+
+
+3. Functional Requirements
+
+FR1: User Registration
+
+* Display registration form.
+* Validate required fields.
+* Save data locally.
+
+FR2: User Login
+
+* Display login page.
+* Authenticate using Local Storage (simulation).
+
+FR3: User Profile
+
+Users can:
+* Upload profile image (optional)
+* Enter name
+* Bio
+* Location
+* Offered skills
+* Skills to learn
+
+FR4: Skill Management
+
+Users can:
+* Add new skills
+* Edit skills
+* Delete skills
+
+FR5: Browse Skills
+
+Display:
+* User name
+* Skill offered
+* Skill wanted
+* Category
+
+FR6: Search
+
+Allow searching by:
+* Skill name
+* User name
+* Category
+
+FR7: Filter
+
+Filter skills using:
+* Technology
+* Language
+* Music
+* Design
+* Fitness
+* Business
+* Others
+
+FR8: Swap Request
+
+Users can:
+* Send request
+* Accept request
+* Reject request
+* Cancel request
+
+(All actions are simulated on the frontend.)
+
+FR9: Dashboard
+
+Display:
+
+* Active requests
+* Completed swaps
+* Profile summary
+
+
+
+4. Non-Functional Requirements
+
+Performance:
+
+* Load pages within 2 seconds.
+* Fast search functionality.
+
+Reliability:
+
+* Store user data safely in Local Storage.
+* Prevent data loss during navigation.
+
+Usability:
+
+* Clean and intuitive interface.
+* Easy navigation.
+* Mobile-friendly layout.
+
+Security:
+
+* Basic client-side validation.
+* Password masking in the UI.
+* No sensitive information stored online.
+
+Maintainability:
+
+* Modular code structure.
+* Reusable components.
+* Clear comments.
+
+Compatibility:
+
+Supports:
+
+* Google Chrome
+* Mozilla Firefox
+* Microsoft Edge
+* Safari
+
+
+
+5. System Requirements
+
+Hardware:
+
+* Processor: Dual Core or above
+* RAM: 4 GB minimum
+* Storage: 100 MB free space
+
+Software:
+
+* Windows, macOS, or Linux
+* Modern web browser
+* Visual Studio Code
+* Node.js (if React is used)
+
+
+
+6. User Interface Requirements
+
+The application includes:
+
+* Home Page
+* Login Page
+* Registration Page
+* Dashboard
+* User Profile
+* Browse Skills Page
+* Search & Filter
+* Swap Request Page
+* Settings
+* Dark/Light Mode
+
+
+
+7. Data Requirements
+
+User Data:
+
+* User ID
+* Name
+* Email
+* Password (demo only)
+* Profile picture
+* Bio
+* Location
+
+Skill Data:
+
+* Skill name
+* Category
+* Description
+* Experience level
+
+Swap Request:
+
+* Sender
+* Receiver
+* Offered skill
+* Requested skill
+* Status
+
+
+
+8. Constraints:
+
+* Frontend only.
+* No backend server.
+* No real authentication.
+* Data stored locally.
+* Internet required only for external APIs (if used).
+
+
+
+9. Future Enhancements:
+
+* Backend integration
+* Database support
+* Real authentication
+* Chat system
+* Video call integration
+* AI-based skill recommendations
+* User ratings and reviews
+* Notifications
+* Mobile application
+
+
+10. Conclusion:
+
+Skill Swap is a frontend web application that encourages collaborative learning through peer-to-peer skill exchange.
+It enables users to showcase their expertise, discover learning opportunities, and simulate skill exchange requests in a responsive and user-friendly environment. 
+The project demonstrates key frontend development concepts and provides a strong foundation for future full-stack enhancements.
