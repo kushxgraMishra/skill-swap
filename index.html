@@ -1,0 +1,600 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SkillSwap — Learn Together</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+        <div class="container py-2">
+
+            <a class="navbar-brand fw-bold" href="#">
+                skill<span class="brand-accent">swap.</span>
+            </a>
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav mx-auto gap-lg-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link" href="#my-swaps">My swaps</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#explore">Explore skills</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#how-it-works">How it works</a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link" href="#my-profile">My Profile</a>
+                    </li>
+                </ul>
+
+                <a href="#explore" class="btn btn-dark rounded-pill px-4">
+                    Get started &rarr;
+                </a>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Hero section -->
+    <header class="hero-section" id="home">
+        <div class="container py-5">
+            <div class="row align-items-center g-5 py-lg-5">
+
+                <div class="col-lg-7">
+                    <span class="eyebrow">
+                        LEARN SOMETHING. TEACH SOMETHING.
+                    </span>
+
+                    <h1 class="hero-title mt-4">
+                        Your skills are<br>
+                        <span class="brand-accent">someone else's</span><br>
+                        next big thing.
+                    </h1>
+
+                    <p class="hero-description mt-4">
+                        Exchange what you know for what you want to learn.
+                        Meet students, share knowledge, and grow together.
+                        No money. Just skills.
+                    </p>
+
+                    <div class="d-flex flex-wrap gap-3 mt-4">
+                        <a href="#explore"
+                           class="btn btn-dark btn-lg rounded-pill px-4">
+                            Find your match &rarr;
+                        </a>
+
+                        <a href="#how-it-works"
+                           class="btn btn-outline-dark btn-lg rounded-pill px-4">
+                            How it works
+                        </a>
+                    </div>
+
+                    <p class="small text-secondary mt-4 mb-0">
+                        Built for curious minds. Powered by community.
+                    </p>
+                </div>
+
+                <div class="col-lg-5">
+                    <div class="hero-card p-4 p-md-5">
+                        <div class="d-flex justify-content-between
+                                    align-items-center mb-4">
+                            <span class="small fw-semibold">THE PERFECT SWAP</span>
+                            <span class="live-dot"></span>
+                        </div>
+
+                        <div class="swap-person p-3 rounded-4 mb-3">
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="avatar avatar-purple">A</div>
+                                <div>
+                                    <h6 class="mb-1">Aarav Sharma</h6>
+                                    <p class="small text-secondary mb-0">
+                                        Can teach Java
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swap-symbol text-center my-3">
+                            <span>&harr;</span>
+                            <p class="small text-secondary mt-2 mb-0">
+                                Skills, not money
+                            </p>
+                        </div>
+
+                        <div class="swap-person p-3 rounded-4">
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="avatar avatar-pink">S</div>
+                                <div>
+                                    <h6 class="mb-1">Simran Kapoor</h6>
+                                    <p class="small text-secondary mb-0">
+                                        Can teach UI/UX design
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="text-center mt-4">
+                            <span class="badge rounded-pill text-bg-light">
+                                A win-win exchange
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- Explore skills -->
+    <section class="py-5" id="explore">
+        <div class="container py-4">
+
+            
+       <div class="d-flex flex-wrap justify-content-between
+            align-items-end gap-3 mb-4">
+         <div>
+            <span class="eyebrow">YOUR NEXT LEARNING PARTNER</span>
+            <h2 class="section-title mt-2">Explore the community.</h2>
+            <p class="text-secondary mb-0">
+              Find people who know what you want to learn.
+            </p>
+         </div>
+
+       <a href="#my-profile" class="btn btn-primary">
+    Manage My Profile
+</a>
+        </div>
+
+            <div class="row g-3 mb-4">
+                <div class="col-md-8">
+                    <label for="searchInput" class="form-label">
+                        Search skills or people
+                    </label>
+                    <input
+                        type="search"
+                        class="form-control form-control-lg"
+                        id="searchInput"
+                        placeholder="Try Java, photography, or a name..."
+                    >
+                </div>
+
+                <div class="col-md-4">
+                    <label for="categoryFilter" class="form-label">
+                        Category
+                    </label>
+                    <select class="form-select form-select-lg"
+                            id="categoryFilter">
+                        <option value="all">All categories</option>
+                        <option value="Technology">Technology</option>
+                        <option value="Design">Design</option>
+                        <option value="Music">Music</option>
+                        <option value="Language">Language</option>
+                        <option value="Fitness">Fitness</option>
+                        <option value="Business">Business</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- JavaScript will render skill cards here -->
+            <div class="row g-4" id="skillsContainer"></div>
+
+            <div id="emptyState" class="text-center py-5 d-none">
+                <h5>No matches found</h5>
+                <p class="text-secondary">
+                    Try another search or category.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+<!-- My Profile Section -->
+<section class="py-5 bg-light" id="my-profile">
+    <div class="container py-4">
+        <span class="eyebrow">YOUR PERSONAL SPACE</span>
+        <h2 class="section-title mt-2">My profile.</h2>
+        <p class="text-secondary mb-4">
+            Tell the community what you know and what you want to learn.
+            Your profile is managed separately from Explore.
+        </p>
+
+        <div class="row g-4">
+            <div class="col-lg-7">
+                <div class="skill-card">
+                    <form id="myProfileForm">
+                        <div class="mb-3">
+                            <label for="profileName" class="form-label">
+                                Your name
+                            </label>
+                            <input type="text" class="form-control"
+                                   id="profileName" required maxlength="60"
+                                   placeholder="Your full name">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="profileTeach" class="form-label">
+                                Skills I can teach
+                            </label>
+                            <input type="text" class="form-control"
+                                   id="profileTeach" required maxlength="200"
+                                   placeholder="e.g. Java, HTML, video editing">
+                            <div class="form-text">
+                                You can list multiple skills, separated by commas.
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="profileLearn" class="form-label">
+                                Skills I want to learn
+                            </label>
+                            <input type="text" class="form-control"
+                                   id="profileLearn" required maxlength="200"
+                                   placeholder="e.g. UI/UX design, Python, photography">
+                            <div class="form-text">
+                                Add the skills you hope to learn through exchanges.
+                            </div>
+                        </div>
+
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="profileCategory" class="form-label">
+                                    Main category
+                                </label>
+                                <select id="profileCategory"
+                                        class="form-select" required>
+                                    <option value="">Choose category</option>
+                                    <option value="Technology">Technology</option>
+                                    <option value="Design">Design</option>
+                                    <option value="Music">Music</option>
+                                    <option value="Language">Language</option>
+                                    <option value="Fitness">Fitness</option>
+                                    <option value="Business">Business</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="profileLevel" class="form-label">
+                                    Skill level
+                                </label>
+                                <select id="profileLevel"
+                                        class="form-select" required>
+                                    <option value="Beginner">Beginner</option>
+                                    <option value="Intermediate">Intermediate</option>
+                                    <option value="Advanced">Advanced</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <button type="submit"
+                                class="btn btn-dark rounded-pill px-4 mt-4">
+                            Save my profile &rarr;
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-lg-5">
+                <div class="skill-card h-100">
+                    <span class="eyebrow">PROFILE PREVIEW</span>
+                    <div class="d-flex align-items-center gap-3 mt-4 mb-4">
+                        <div class="avatar avatar-purple" id="profileAvatar">ME</div>
+                        <div>
+                            <h5 id="previewName" class="mb-1">Your name</h5>
+                            <span class="small text-secondary"
+                                  id="previewLevel">Your skill level</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-detail">
+                        <span class="detail-label">I CAN TEACH</span>
+                        <p class="mb-0" id="previewTeach">Your skills will appear here.</p>
+                    </div>
+
+                    <div class="skill-detail learn-detail mt-3">
+                        <span class="detail-label">I WANT TO LEARN</span>
+                        <p class="mb-0" id="previewLearn">Your learning goals will appear here.</p>
+                    </div>
+
+                    <p class="small text-secondary mt-3 mb-0">
+                        This profile is saved locally in your browser.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- My Swaps Section -->
+<section class="py-5" id="my-swaps">
+    <div class="container py-4">
+
+        <span class="eyebrow">YOUR ACTIVITY</span>
+        <h2 class="section-title mt-2">My swaps.</h2>
+        <p class="text-secondary mb-4">
+            Keep track of the skills you want to exchange.
+        </p>
+
+        <div id="requestsContainer" class="row g-3"></div>
+
+        <div id="noRequests" class="text-center py-5">
+            <h5>No swap requests yet.</h5>
+            <p class="text-secondary">
+                Find someone in the community and send your first request.
+            </p>
+            <a href="#explore" class="btn btn-outline-dark rounded-pill px-4">
+                Explore skills
+            </a>
+        </div>
+
+    </div>
+</section>
+
+    <!-- How it works -->
+    <section class="py-5 bg-light" id="how-it-works">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <span class="eyebrow">SIMPLE BY DESIGN</span>
+                <h2 class="section-title mt-2">Three steps. Endless learning.</h2>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="step-card p-4 h-100">
+                        <span class="step-number">01</span>
+                        <h5 class="mt-4">Share your skills</h5>
+                        <p class="text-secondary mb-0">
+                            Tell the community what you can teach.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="step-card p-4 h-100">
+                        <span class="step-number">02</span>
+                        <h5 class="mt-4">Find your match</h5>
+                        <p class="text-secondary mb-0">
+                            Discover someone who wants to learn from you
+                            and can teach you something new.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="step-card p-4 h-100">
+                        <span class="step-number">03</span>
+                        <h5 class="mt-4">Start swapping</h5>
+                        <p class="text-secondary mb-0">
+                            Send a request and start learning together.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Add Skill Modal -->
+<div class="modal fade" id="addSkillModal" tabindex="-1"
+     aria-labelledby="addSkillTitle" aria-hidden="true">
+
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 rounded-4">
+
+            <div class="modal-header border-0 px-4 pt-4">
+                <div>
+                    <span class="eyebrow">JOIN THE COMMUNITY</span>
+                    <h4 class="modal-title mt-2" id="addSkillTitle">
+                        Share what you know.
+                    </h4>
+                </div>
+
+                <button type="button" class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body px-4 pb-4">
+                <form id="addSkillForm">
+
+                    <div class="mb-3">
+                        <label for="studentName" class="form-label">
+                            Your name
+                        </label>
+                        <input type="text" class="form-control"
+                               id="studentName" maxlength="60"
+                               required placeholder="e.g. Kushagra Mishra">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="teachSkill" class="form-label">
+                            Skill you can teach
+                        </label>
+                        <input type="text" class="form-control"
+                               id="teachSkill" maxlength="80"
+                               required placeholder="e.g. Java Programming">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="learnSkill" class="form-label">
+                            Skill you want to learn
+                        </label>
+                        <input type="text" class="form-control"
+                               id="learnSkill" maxlength="80"
+                               required placeholder="e.g. Graphic Design">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="skillCategory" class="form-label">
+                            Category
+                        </label>
+                        <select class="form-select" id="skillCategory" required>
+                            <option value="">Choose a category</option>
+                            <option value="Technology">Technology</option>
+                            <option value="Design">Design</option>
+                            <option value="Music">Music</option>
+                            <option value="Language">Language</option>
+                            <option value="Fitness">Fitness</option>
+                            <option value="Business">Business</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="skillLevel" class="form-label">
+                            Your level
+                        </label>
+                        <select class="form-select" id="skillLevel" required>
+                            <option value="Beginner">Beginner</option>
+                            <option value="Intermediate">Intermediate</option>
+                            <option value="Advanced">Advanced</option>
+                        </select>
+                    </div>
+
+                    <button type="submit"
+                            class="btn btn-dark rounded-pill w-100 py-3">
+                        Publish my profile &rarr;
+                    </button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Skill Swap Request Modal -->
+<div class="modal fade" id="swapModal" tabindex="-1"
+     aria-labelledby="swapModalTitle" aria-hidden="true">
+
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 rounded-4">
+
+            <div class="modal-header border-0 px-4 pt-4">
+                <div>
+                    <span class="eyebrow">MAKE A CONNECTION</span>
+                    <h4 class="modal-title mt-2" id="swapModalTitle">
+                        Request a skill swap
+                    </h4>
+                </div>
+
+                <button type="button" class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body px-4 pb-4">
+
+                <p class="text-secondary">
+                    You're connecting with
+                    <strong id="swapPartnerName">a student</strong>.
+                </p>
+
+                <form id="swapForm">
+
+                    <div class="mb-3">
+                        <label for="offeredSkill" class="form-label">
+                            What can you teach in return?
+                        </label>
+
+                        <input type="text" class="form-control"
+                               id="offeredSkill"
+                               placeholder="e.g. Python, photography"
+                               required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="swapMessage" class="form-label">
+                            Introduce yourself
+                        </label>
+
+                        <textarea class="form-control"
+                                  id="swapMessage" rows="3"
+                                  maxlength="300"
+                                  placeholder="Hi! I'd love to exchange skills with you..."></textarea>
+                    </div>
+
+                    <button type="submit"
+                            class="btn btn-dark rounded-pill w-100 py-3">
+                        Send swap request &rarr;
+                    </button>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Confirmation Toast -->
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="successToast"
+         class="toast border-0 rounded-4"
+         role="status" aria-live="polite" aria-atomic="true">
+
+        <div class="toast-header">
+            <strong class="me-auto">SkillSwap</strong>
+            <small>Just now</small>
+            <button type="button" class="btn-close"
+                    data-bs-dismiss="toast"
+                    aria-label="Close"></button>
+        </div>
+
+        <div class="toast-body">
+            Your swap request has been saved successfully!
+        </div>
+    </div>
+</div>
+
+    <!-- Footer -->
+    <footer class="py-4 border-top">
+        <div class="container d-flex flex-wrap justify-content-between gap-2">
+            <span class="fw-bold">skill<span class="brand-accent">swap.</span></span>
+            <span class="small text-secondary">
+                Built for students, by students.
+            </span>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
